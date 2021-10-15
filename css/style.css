@@ -15,6 +15,14 @@ h1, h2 {
     font-family: 'rancho';
 }
 
+h1 {
+    color: #00361B;
+}
+
+h2 {
+    color: #508355;
+}
+
 
 .logosite {
     width: 10vw;
@@ -64,7 +72,7 @@ h1, h2 {
     text-decoration: none;
     text-align: center;
     background-color: #C38570;
-    color: #fff;
+    color: #00361B;
     }
    
    .menu ul ul {
