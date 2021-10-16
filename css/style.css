@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -35,12 +37,28 @@ h2 {
     width: 100%;
 }
 
+.logogulliver{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+.logogulliver img{
+    width: 35vw;
+    border-radius: 20px;
+}
+
 .hoteis {
     height: 35px auto;
     width: 35px auto;
 }
 
-
+.hoteis h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #000;
+    
+}
 
 
   
@@ -117,6 +135,8 @@ h2 {
    label[for=”bt_menu”]{
     display: none;
     }
+
+
    
    /*Deixando o Menu Responsivo */
    @media(max-width: 800px) {
