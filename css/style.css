@@ -39,8 +39,8 @@ h2 {
 
 .logogulliver{
     position: absolute;
-    top: 80px;
-    left: 50px;
+    /* top: 80px; */
+    /* left: 50px; */
 }
 
 .logogulliver img{
@@ -72,7 +72,11 @@ h2 {
 
   
    /*Estilizando a nav da classe menu */
-    .menu {
+   .menu_cabecalho {
+       display: flex;
+   }
+   
+   .menu, .menu1{
     width: 100%;
     height: 50px;
     background-color: #1d74d8;
@@ -82,17 +86,17 @@ h2 {
 
    
    /*Estilizando as listas */
-    .menu ul {
+    .menu ul, .menu1 ul {
     list-style: none;
     position: relative;
     }
    
-   .menu ul li {
+   .menu ul li, .menu1 ul li {
     width: 150px;
     float: left;
     }
    
-   .menu a {
+   .menu a, .menu1 a {
     padding: 15px;
     display: block;
     text-decoration: none;
@@ -101,31 +105,31 @@ h2 {
     color: #00361B;
     }
    
-   .menu ul ul {
+   .menu ul ul, .menu1 ul ul {
     position: absolute;
     visibility: hidden;
     }
    
-   .menu ul li:hover ul {
+   .menu1 ul li:hover ul {
     visibility: visible;
     }
    
-   .menu a:hover {
+   .menu a:hover, .menu1 a:hover {
     background-color: #f4f4f4;
     color: #555;
     }
    
-   .menu ul ul li {
+   .menu1 ul ul li {
     float: none;
     border-bottom: solid 1px #ccc;
     }
    
-   .menu ul ul li a {
+   .menu1 ul ul li a {
     background-color: #866965;
     }
    
    /*Criando o label */
-    label[for=”bt_menu”]{
+    label{
     padding: 5px;
     background-color: #222;
     color: #fff;
@@ -141,7 +145,7 @@ h2 {
     display: none;
     }
    
-   label[for=”bt_menu”]{
+   label{
     display: none;
     }
 
@@ -149,7 +153,7 @@ h2 {
    
    /*Deixando o Menu Responsivo */
    @media(max-width: 800px) {
-   label[for=”bt_menu”] {
+   label{
     display: block;
     }
      
@@ -168,7 +172,7 @@ h2 {
     float: none;
     }
      
-   .menu ul ul {
+   /* .menu ul ul {
     position: static;
     overflow: hidden;
     max-height: 0;
@@ -178,4 +182,4 @@ h2 {
    .menu ul li:hover ul {
     height: auto;
     max-height: 200px;
-    }
+    } */
