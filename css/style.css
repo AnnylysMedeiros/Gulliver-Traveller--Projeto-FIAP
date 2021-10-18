@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +11,12 @@
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #D9D9D9;
 }
 
 h1 {
@@ -22,82 +28,7 @@ h2 {
 }
 
 
-.logosite {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-}
-
-.logosite img {
-    width: 100%;
-}
-
-.logogulliver {
-    position: absolute;
-    /* top: 80px; */
-    /* left: 50px; */
-}
-
-.logogulliver img {
-    width: 35vw;
-    border-radius: 20px;
-}
-
-.titulo_principal {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3.3rem;
-    color: #1d74d8;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-
-
-.hoteis {
-    display: flex;
-    margin-top: 20px;
-
-}
-
-.hoteis img {
-    width: 40%;
-    max-width: 450px;
-    border: 1px solid #000;
-    /* padding: 5px; */
-    margin: 10px;
-
-}
-
-.titulo_hotel {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    color: #1d74d8;
-
-
-}
-
-.bloco_conteudo_hotel {
-    display: block;
-    max-width: 500px;
-}
-
-.bloco_conteudo_hotel h2 {
-    font-family: 'rancho';
-    font-size: 2rem;
-}
-
-.bloco_conteudo_hotel p {
-    margin-top: 30px;
-}
-
-
-
-
-
-
-/*Estilizando a nav da classe menu */
+/*Estilização do menu */
 .menu_cabecalho {
     height: 52px;
     display: block;
@@ -114,14 +45,15 @@ h2 {
     justify-content: flex-start;
 }
 
-.menu {
+.menu, .rodape {
     display: flex;
     height: 100%;
     font-family: 'rancho';
     font-size: 1.2rem;
+    z-index: 10;
 }
 
-/*Estilizando as listas */
+/*Estilização das listas */
 .menu ul {
     list-style: none;
     position: relative;
@@ -182,11 +114,13 @@ h2 {
 
 .menuleft ul ul li {
     float: none;
+
 }
 
 .menuleft ul ul li a {
     background-color: #4b94e7;
     color: #f4f4f4;
+    transition: background-color 1s ease, color 0.9s ease;
 }
 
 .menuleft ul ul li a:hover {
@@ -194,7 +128,7 @@ h2 {
     color: #d3d1d1;
 }
 
-/*Criando o label */
+/* Label */
 label {
     padding: 5px;
     background-color: #222;
@@ -215,9 +149,239 @@ label {
     display: none;
 }
 
+/* fim do cabeçalho */
 
 
-/*Deixando o Menu Responsivo */
+/* carrossel */
+.slides {
+    display: none
+}
+
+.imagem_carrossel {
+    vertical-align: middle;
+    height: 350px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* botoes Next & previous */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* posição do "next button" para a direita */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* nome do local da foto */
+.text {
+    color: #fff;
+    text-shadow: 0.03em 0.09em 0.3em #333;
+    font-size: 1.8rem;
+    background-color: #7171719f;
+    font-weight: 800;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Numbero de fotos no carrossel */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* marcadores/indicadores */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* fim carrossel */
+
+
+.logogulliver {
+    /* top: 80px; */
+
+}
+
+.logogulliver {
+    /* position: absolute; */
+    /* display: flex; */
+    /* position: relative; */
+    /* width: 60vw;
+    z-index: 10;
+    height: 60vh; */
+}
+
+
+.titulo_principal {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.3rem;
+    text-shadow: 0.03em 0.03em 0.03em #333;
+    color: #1d74d8;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.breadcrumb {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px 7px;
+    color: #222;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #222;
+}
+
+.breadcrumb ul {
+    display: flex;
+
+}
+
+.breadcrumb li {
+    list-style: none;
+
+}
+
+.breadcrumb li::before {
+    content: ">";
+    margin: 4px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    text-shadow: 0.03em 0.03em 0.03em #333;
+}
+
+/* section com informações dos hoteis */
+.hoteis {
+    display: flex;
+    margin: 5px 15px 50px 15px;
+    border: 1px solid #000;
+    background-color: #f7f2f2;
+
+}
+
+.hoteis:hover {
+    box-shadow: 0 0 1em #666;
+}
+
+.hoteis img {
+    width: 40%;
+    max-width: 450px;
+    max-height: 350px;
+    margin: 10px;
+    position: relative;
+
+}
+
+
+.bloco_conteudo_hotel {
+    display: block;
+    max-width: 700px;
+
+}
+
+.bloco_conteudo_hotel h2 {
+    font-family: 'rancho';
+    font-size: 2.5rem;
+    color: #00361B;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bloco_conteudo_hotel p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.rodape {
+    background-color: #1d74d8;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade do site */
 @media(max-width: 1050px) {
     label {
         display: inline-block;
@@ -252,6 +416,42 @@ label {
     }
 
     .menu {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
+
+    .carrossel {
+        height: 200px;
+    }
+
+    .breadcrumb {
+        font-size: 1rem;
+    }
+
+    .titulo_principal {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .hoteis {
+        display: block;
+        text-align: center;
+    }
+
+    .hoteis img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bloco_conteudo_hotel h2 {
+        font-size: 2rem;
+    }
+
+    .bloco_conteudo_hotel p {
+        font-size: 1rem;
+    }
+
+    .imagem_carrossel {
+        height: 200px;
+    }
+
 }
