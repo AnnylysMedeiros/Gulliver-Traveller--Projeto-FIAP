@@ -28,7 +28,7 @@ h2 {
 }
 
 
-/*Estilização do menu */
+/*Inicio da estilização do menu */
 .menu_cabecalho {
     height: 52px;
     display: block;
@@ -101,6 +101,7 @@ h2 {
     position: absolute;
     margin-top: 52px;
     visibility: hidden;
+    z-index: 15;
 }
 
 .menuleft ul li:hover ul {
@@ -148,7 +149,6 @@ label {
 label {
     display: none;
 }
-
 /* fim do cabeçalho */
 
 
@@ -394,8 +394,11 @@ label {
         margin-right: 0px;
     }
 
+    .menuright {
+        margin-left: -100%;
+    }
+
     .menuright ul {
-        /*margin-top: 5px;*/
         z-index: 0;
         margin-right: -50%;
     }
