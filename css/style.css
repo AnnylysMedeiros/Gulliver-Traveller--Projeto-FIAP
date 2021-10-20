@@ -151,6 +151,14 @@ label {
 }
 /* fim do cabeçalho */
 
+/*logotipo Gulliver */
+
+.logogulliver{
+    width: 15vw;
+    position: absolute;
+    left: 3vw;
+}
+
 
 /* carrossel */
 .slides {
