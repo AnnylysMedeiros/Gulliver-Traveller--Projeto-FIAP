@@ -416,6 +416,7 @@ label {
 
     .menuleft ul li {
         width: 80px;
+        z-index: 15;
     }
 
     .menu {
