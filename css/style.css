@@ -19,6 +19,52 @@ body {
     background-color: #D9D9D9;
 }
 
+.zoomais{
+    color: #D9D9D9;
+    background-color: #00361b ;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    top: 410px;
+    left: 65px;
+}
+
+.zoomais p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+.zoomenos{
+    color: #D9D9D9;
+    background-color: #00361b ;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 50px;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    top: 410px;
+    left: 125px;
+}
+
+.zoomenos p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
 h1 {
     color: #00361B;
 }
@@ -163,7 +209,7 @@ label {
 /*logotipo Gulliver */
 .logogulliver {
     width: 15vw;
-    position: absolute;
+    position: relative;
     left: 3vw;
 }
 
