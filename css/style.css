@@ -94,6 +94,7 @@ h2 {
     text-decoration: none;
     text-align: center;
     background-color: #1d74d8;
+    /* utilizar #5297E8 */
     color: #00361B;
     transition: background-color 1s ease, color 0.9s ease;
 }
@@ -151,10 +152,15 @@ label {
     display: none;
 }
 
+.pular_conteudo {
+    position: absolute;
+    left: -999em;
+}
+
 /* fim do cabeçalho */
 
-/*logotipo Gulliver */
 
+/*logotipo Gulliver */
 .logogulliver {
     width: 15vw;
     position: absolute;
@@ -245,6 +251,7 @@ label {
 
 .botao_alternar_foto {
     text-align: center;
+    margin-top: 20px;
 }
 
 .active,
