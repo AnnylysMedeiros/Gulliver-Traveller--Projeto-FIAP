@@ -45,7 +45,8 @@ h2 {
     justify-content: flex-start;
 }
 
-.menu, .rodape {
+.menu,
+.rodape {
     display: flex;
     height: 100%;
     font-family: 'rancho';
@@ -149,11 +150,12 @@ label {
 label {
     display: none;
 }
+
 /* fim do cabeçalho */
 
 /*logotipo Gulliver */
 
-.logogulliver{
+.logogulliver {
     width: 15vw;
     position: absolute;
     left: 3vw;
@@ -241,6 +243,10 @@ label {
     transition: background-color 0.6s ease;
 }
 
+.botao_alternar_foto {
+    text-align: center;
+}
+
 .active,
 .dot:hover {
     background-color: #717171;
@@ -274,22 +280,6 @@ label {
 }
 
 /* fim carrossel */
-
-
-.logogulliver {
-    /* top: 80px; */
-
-}
-
-.logogulliver {
-    /* position: absolute; */
-    /* display: flex; */
-    /* position: relative; */
-    /* width: 60vw;
-    z-index: 10;
-    height: 60vh; */
-}
-
 
 .titulo_principal {
     font-family: 'Roboto', sans-serif;
@@ -338,11 +328,12 @@ label {
     text-shadow: 0.03em 0.03em 0.03em #333;
 }
 
+
 /* section com informações dos hoteis */
 .hoteis {
     display: flex;
     margin: 5px 15px 50px 15px;
-    border: 1px solid #000;
+
     background-color: #f7f2f2;
 
 }
@@ -360,7 +351,6 @@ label {
 
 }
 
-
 .bloco_conteudo_hotel {
     display: block;
     max-width: 700px;
@@ -375,9 +365,23 @@ label {
     text-align: center;
 }
 
-.bloco_conteudo_hotel p {
+.bloco_conteudo_hotel ul {
     margin-top: 30px;
     font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.bloco_conteudo_hotel a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #4b94e7;
+    color: #222;
+    border-radius: 5px;
+}
+
+.bloco_conteudo_hotel a:hover {
+    background-color: #71a3dd;
+    color: #00361B;
     font-weight: 900;
 }
 
@@ -415,6 +419,15 @@ label {
         width: 100%;
         float: none;
     }
+
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+
+    .titulo_principal {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }
 
 @media(max-width: 650px) {
@@ -442,6 +455,10 @@ label {
     .titulo_principal {
         font-size: 1.8rem;
         text-align: center;
+    }
+
+    .breadcrumb {
+        font-size: 0.7rem;
     }
 
     .hoteis {
