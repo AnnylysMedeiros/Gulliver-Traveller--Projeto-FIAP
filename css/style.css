@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +17,7 @@ body {
     background-color: #D9D9D9;
 }
 
+<<<<<<< HEAD
 .zoomais{
     color: #D9D9D9;
     background-color: #00361b ;
@@ -74,14 +73,27 @@ h2 {
 }
 
 
+=======
+>>>>>>> b9c319d3c34c93bfaddac9d15ac8d4fb31b051bd
 /*Inicio da estilização do menu */
 .menu_cabecalho {
-    height: 52px;
+    height: 59px;
     display: block;
     position: relative;
-    background-color: #1d74d8;
+    background-color: #5297E8;
 }
 
+.menu a {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #5297E8;
+    color: #00361B;
+    transition: background-color 1s ease, color 0.9s ease;
+}
+ 
 .right-floating {
     justify-content: flex-end;
 }
@@ -96,7 +108,7 @@ h2 {
     display: flex;
     height: 100%;
     font-family: 'rancho';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     z-index: 10;
 }
 
@@ -108,16 +120,10 @@ h2 {
 
 .menuleft>ul>li {
     display: flex;
-    /*align-items: center;*/
     justify-content: center;
     height: 100%;
 }
 
-/*
-.menuleft > ul > li > a {
-    height: 100%;
-}
-*/
 .menuright {
     overflow-x: clip;
     position: relative;
@@ -133,17 +139,6 @@ h2 {
     float: left;
 }
 
-.menu a {
-    padding: 15px;
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background-color: #1d74d8;
-    color: #00361B;
-    transition: background-color 1s ease, color 0.9s ease;
-}
-
 .menu ul ul {
     position: absolute;
     margin-top: 52px;
@@ -155,18 +150,19 @@ h2 {
     visibility: visible;
 }
 
-.menu a:hover {
-    background-color: #4b94e7;
+.menu li:hover > a {
+    background-color: #1C6FCF;
     color: #f4f4f4;
+    transition: background-color 1s ease, color 0.9s ease;
+    
 }
 
 .menuleft ul ul li {
     float: none;
-
 }
 
-.menuleft ul ul li a {
-    background-color: #4b94e7;
+/* .menuleft ul ul li a {
+    background-color: #1C6FCF;
     color: #f4f4f4;
     transition: background-color 1s ease, color 0.9s ease;
 }
@@ -174,7 +170,7 @@ h2 {
 .menuleft ul ul li a:hover {
     background-color: #589dec;
     color: #d3d1d1;
-}
+} */
 
 /* Label */
 label {
@@ -199,14 +195,65 @@ label {
 
 /* fim do cabeçalho */
 
-/*logotipo Gulliver */
 
-.logogulliver {
-    width: 15vw;
-    position: relative;
-    left: 3vw;
+.pular_conteudo {
+    position: absolute;
+    left: -999em;
 }
 
+.zoomais {
+    color: #D9D9D9;
+    background-color: #00361b;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    top: 410px;
+    left: 65px;
+}
+
+.zoomais p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.zoomenos {
+    color: #D9D9D9;
+    background-color: #00361b;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 50px;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    top: 410px;
+    left: 125px;
+}
+
+.zoomenos p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*logotipo Gulliver */
+.logogulliver {
+    width: 150px;
+    position: absolute;
+    left: 3vw;
+    margin-top: 5px;
+    z-index: 5;
+}
 
 /* carrossel */
 .slides {
@@ -218,14 +265,13 @@ label {
     height: 350px;
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 800px;
     position: relative;
     margin: auto;
 }
 
-/* botoes Next & previous */
+/* botões Next & previous */
 .prev,
 .next {
     cursor: pointer;
@@ -243,7 +289,7 @@ label {
     user-select: none;
 }
 
-/* posição do "next button" para a direita */
+/* posição do next button para a direita */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -254,7 +300,7 @@ label {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* nome do local da foto */
+/* nome do local na foto do carrossel */
 .text {
     color: #fff;
     text-shadow: 0.03em 0.09em 0.3em #333;
@@ -268,7 +314,7 @@ label {
     text-align: center;
 }
 
-/* Numbero de fotos no carrossel */
+/* Numero de fotos no carrossel */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -291,6 +337,7 @@ label {
 
 .botao_alternar_foto {
     text-align: center;
+    margin-top: 20px;
 }
 
 .active,
@@ -331,7 +378,7 @@ label {
     font-family: 'Roboto', sans-serif;
     font-size: 3.3rem;
     text-shadow: 0.03em 0.03em 0.03em #333;
-    color: #1d74d8;
+    color: #1C6FCF;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -381,7 +428,6 @@ label {
     margin: 5px 15px 50px 15px;
 
     background-color: #f7f2f2;
-
 }
 
 .hoteis:hover {
@@ -394,13 +440,11 @@ label {
     max-height: 350px;
     margin: 10px;
     position: relative;
-
 }
 
 .bloco_conteudo_hotel {
     display: block;
     max-width: 700px;
-
 }
 
 .bloco_conteudo_hotel h2 {
@@ -415,12 +459,13 @@ label {
     margin-top: 30px;
     font-size: 1.2rem;
     font-weight: 900;
+    list-style: none;
 }
 
 .bloco_conteudo_hotel a {
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: #4b94e7;
+    background-color: #1C6FCF;
     color: #222;
     border-radius: 5px;
 }
@@ -432,7 +477,7 @@ label {
 }
 
 .rodape {
-    background-color: #1d74d8;
+    background-color: #5297E8;
     height: 50px;
     display: flex;
     align-items: center;
@@ -452,6 +497,14 @@ label {
         margin-right: 0px;
     }
 
+    .menu {
+        font-size: 1.5rem;
+    }
+
+    .menu a {
+        text-align: start;
+    }
+
     .menuright {
         margin-left: -100%;
     }
@@ -464,6 +517,10 @@ label {
     .menuright ul li {
         width: 100%;
         float: none;
+    }
+
+    .logogulliver {
+        left: 10vw;
     }
 
     .breadcrumb {
@@ -483,19 +540,27 @@ label {
 
     .menuleft ul li {
         width: 80px;
-        z-index: 15;
+        z-index: 25;
     }
 
-    .menu {
-        font-size: 0.9rem;
-    }
-
-    .carrossel {
-        height: 200px;
-    }
-
-    .breadcrumb {
+    .menu a {
+        padding-left: 0;
+        padding-right: 0;
         font-size: 1rem;
+    }
+
+    .home {
+        padding-left: 9px;      
+    }
+
+    .logogulliver {
+        width: 25vw;
+        margin-top: 5px;
+        left: 2vw;
+    }
+
+    .imagem_carrossel {
+        height: 200px;
     }
 
     .titulo_principal {
@@ -525,8 +590,9 @@ label {
         font-size: 1rem;
     }
 
-    .imagem_carrossel {
-        height: 200px;
+
+    .rodape {
+        font-size: 0.9rem;
     }
 
 }

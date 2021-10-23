@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,27 +15,41 @@
 </head>
 
 <body>
-    <div class="menu_cabecalho">
-        <nav class="menu menuleft left-floating">
+    <header>
+        <div class="menu_cabecalho">
+            <nav class="menu menuleft left-floating">
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Hospedagem</a></li>
-                <li><a href="">Gastronomia</a></li>
-                <li><a href="">O que fazer</a>
-                    <ul>
-                        <li><a href="">Parques</a></li>
-                        <li><a href="">História</a></li>
-                        <li><a href="">Cultura</a></li>
-                        <li><a href="">Vida Noturna</a></li>
-                        <li><a href="">Entretenimento</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <label for="bt_menu">&#9776;</label>
-        <input type="checkbox" name="btn_menu" value="menu_checkbox" id="bt_menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="./index.html">Hospedagem</a></li>
+                    <li><a href="">Gastronomia</a></li>
+                    <li><a href="">O que fazer</a>
+                        <ul>
+                            <li><a href="">Parques</a></li>
+                            <li><a href="">História</a></li>
+                            <li><a href="">Cultura</a></li>
+                            <li><a href="">Vida Noturna</a></li>
+                            <li><a href="">Entretenimento</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <label for="bt_menu">&#9776;</label>
+            <input type="checkbox" name="btn_menu" value="menu_checkbox" id="bt_menu">
 
+            <nav class="menu menuright right-floating">
+                <ul>
+                    <li><a href="">Alugue um Carro</a></li>
+                    <li><a href="">Dicas Úteis</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <img class="logogulliver" src="./imagens/Logotipo Gulliver Traveller-02.png"
+            alt="Logotipo do site Gulliver Traveller">
+
+<<<<<<< HEAD
         <nav class="menu menuright right-floating">
             <ul>
                 <li><a href="">Alugue um Carro</a></li>
@@ -51,163 +65,202 @@
             <p>A-</p>
         </div>
     </div>
+=======
+        <!--  inicio carrossel -->
+        <div class="slideshow-container">
+>>>>>>> b9c319d3c34c93bfaddac9d15ac8d4fb31b051bd
 
-    <img class="logogulliver" src="./imagens/Logotipo Gulliver Traveller-02.png"
-        alt="Logotipo do site Gulliver Traveller">
+            <div class="slides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="imagem_carrossel" src="./imagens/MASP_museu.jpg"
+                    alt="Imagem da faxada do Museu de Arte, MASP" style="width:100%">
+                <div class="text">Museu MASP</div>
+            </div>
 
-    <!--  inicio carrossel -->
-    <div class="slideshow-container">
+            <div class="slides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="imagem_carrossel" src="./imagens/ponte_suspensa.jpg"
+                    alt="Imagem da ponte estaiada sobre o rio Tietê" style="width:100%">
+                <div class="text">Ponte Suspensa</div>
+            </div>
 
-        <div class="slides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="imagem_carrossel" src="./imagens/MASP_museu.jpg" style="width:100%">
-            <div class="text">Museu MASP</div>
+            <div class="slides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="imagem_carrossel" src="./imagens/parque_ibirapuera_carrossel.jpg"
+                    alt="Vista do lago no parque Ibirapuera" style="width:100%">
+                <div class="text">Parque Ibirapuera</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <div class="slides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="imagem_carrossel" src="./imagens/ponte_suspensa.jpg" style="width:100%">
-            <div class="text">Ponte Suspensa</div>
+        <div class="botao_alternar_foto">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        <a class="pular_conteudo" href="#conteudo_hospedagem" accesskey="p">Pular para o conteudo principal</a>
+        <!-- fim carrossel -->
 
-        <div class="slides fade">
-            <div class="numbertext">3 / 3</div>
-            <img class="imagem_carrossel" src="./imagens/parque_ibirapuera_carrossel.jpg" style="width:100%">
-            <div class="text">Parque Ibirapuera</div>
-        </div>
+    </header>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <main class="conteudo_hoteis">
+        <h1 class="titulo_principal">Lista de hotéis disponiveis na cidade</h1>
 
-    </div>
-    <br>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><span aria-current="page">Hospedagem</span></li>
+            </ul>
+        </nav>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <!-- fim carrossel -->
+        <article>
+            <section class="hoteis">
+                <img id="sheraton" class="imagem_do_hotel" src="./imagens/hotel_sheraton.jpg"
+                    alt="Imagem da faxada do Sheraton São Paulo WTC Hotel">
 
-    <h1 class="titulo_principal">Lista de hotéis disponiveis na cidade</h1>
+                <div class="bloco_conteudo_hotel">
+                    <h2>Sheraton São Paulo WTC Hotel</h2>
 
-    <nav aria-label="Breadcrumb" class="breadcrumb">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><span aria-current="page">Hospedagem</span></li>
-        </ul>
-    </nav>
+                    <p> O hotel conta com piscina ao ar livre e academia de ginástica, e os hóspedes podem degustar uma
+                        bebida no bar. Há estacionamento privativo disponível no local. Todos os quartos incluem uma
+                        televisão de tela plana. Todos os quartos estão equipados com banheiro privativo. Para seu
+                        conforto,
+                        você encontra produtos de banho gratuitos e secador de cabelo. O prédio dispõe de recepção 24
+                        horas,
+                        cabeleireiro e loja de presentes. O uso gratuito de bicicletas está disponível neste hotel e a
+                        área
+                        é famosa pelo ciclismo. O hotel também oferece aluguel de carros. <br>
+                        O cruzamento das avenidas Faria Lima e Juscelino Kubitschek fica a 2,6 km do Sheraton São Paulo
+                        WTC
+                        Hotel, e a Avenida Paulista está a 6,8 km de distância. O aeroporto mais próximo é Congonhas, a
+                        6 km
+                        do Sheraton São Paulo WTC Hotel.</p>
 
-    <article>
-        <section class="hoteis">
-            <img id="sheraton" class="imagem_do_hotel" src="./imagens/hotel_sheraton.jpg"
-                alt="Imagem da faxada do Sheraton São Paulo WTC Hotel">
+                        <!-- <address>
+                            <strong>SAPO</strong><br />
+                              <a href="http://www.sapo.pt">http://www.sapo.pt</a><br />
+                              <a href="mailto:conteudos@mail.sapo.pt">conteudos@mail.sapo.pt</a><br />
+                              Av. Fontes Pereira de Melo, 40<br />
+                              5º Piso<br />
+                              1069-300 Lisboa<br />
+                              Portugal
+                        </address> -->
+                </div>
+            </section>
 
-            <div class="bloco_conteudo_hotel">
-                <h2>Sheraton São Paulo WTC Hotel</h2>
+            <section class="hoteis">
+                <img id="confort" class="imagem_do_hotel" src="./imagens/hotel_confort.jpg"
+                    alt="Imagem da faxada do Hotel Confort Ibirapuera">
 
-                <p> O hotel conta com piscina ao ar livre e academia de ginástica, e os hóspedes podem degustar uma
-                    bebida no bar. Há estacionamento privativo disponível no local. Todos os quartos incluem uma
-                    televisão de tela plana. Todos os quartos estão equipados com banheiro privativo. Para seu conforto,
-                    você encontra produtos de banho gratuitos e secador de cabelo. O prédio dispõe de recepção 24 horas,
-                    cabeleireiro e loja de presentes. O uso gratuito de bicicletas está disponível neste hotel e a área
-                    é famosa pelo ciclismo. O hotel também oferece aluguel de carros. <br>
-                    O cruzamento das avenidas Faria Lima e Juscelino Kubitschek fica a 2,6 km do Sheraton São Paulo WTC
-                    Hotel, e a Avenida Paulista está a 6,8 km de distância. O aeroporto mais próximo é Congonhas, a 6 km
-                    do Sheraton São Paulo WTC Hotel.</p>
-            </div>
-        </section>
+                <div class="bloco_conteudo_hotel">
+                    <h2>Hotel Confort Ibirapuera</h2>
+                    <p>Dispondo de uma localização excelente em frente à estação de metrô Moema e a apenas 1,5 km do
+                        Parque
+                        Ibirapuera, o Comfort Ibirapuera fica no bairro badalado de Moema, em São Paulo. Uma academia e
+                        uma
+                        piscina na cobertura estão disponíveis.
+                        O Wi-Fi gratuito está à sua disposição em todas as áreas. Um estacionamento está disponível por
+                        um
+                        custo adicional.
+                        Os quartos são modernos, apresentam decoração em madeira e possuem varanda, ar-condicionado,
+                        cofre,
+                        TV de tela plana a cabo e frigobar. O banheiro privativo conta com chuveiro.
+                        <br>
+                        O Comfort Ibirapuera fica a apenas 5 minutos de carro do Shopping Ibirapuera e a 9 km do São
+                        Paulo
+                        Expo. Você também estará a uma curta caminhada de diversos restaurantes, lojas e cafés
+                        elegantes.
 
-        <section class="hoteis">
-            <img id="confort" class="imagem_do_hotel" src="./imagens/hotel_confort.jpg"
-                alt="Imagem da faxada do Hotel Confort Ibirapuera">
+                        O Aeroporto de São Paulo - Congonhas está situado a 3,5 km do hotel.</p>
+                </div>
+            </section>
 
-            <div class="bloco_conteudo_hotel">
-                <h2>Hotel Confort Ibirapuera</h2>
-                <p>Dispondo de uma localização excelente em frente à estação de metrô Moema e a apenas 1,5 km do Parque
-                    Ibirapuera, o Comfort Ibirapuera fica no bairro badalado de Moema, em São Paulo. Uma academia e uma
-                    piscina na cobertura estão disponíveis.
-                    O Wi-Fi gratuito está à sua disposição em todas as áreas. Um estacionamento está disponível por um
-                    custo adicional.
-                    Os quartos são modernos, apresentam decoração em madeira e possuem varanda, ar-condicionado, cofre,
-                    TV de tela plana a cabo e frigobar. O banheiro privativo conta com chuveiro.
-                    <br>
-                    O Comfort Ibirapuera fica a apenas 5 minutos de carro do Shopping Ibirapuera e a 9 km do São Paulo
-                    Expo. Você também estará a uma curta caminhada de diversos restaurantes, lojas e cafés elegantes.
+            <section class="hoteis">
+                <img id="ibis" class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
+                    alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
 
-                    O Aeroporto de São Paulo - Congonhas está situado a 3,5 km do hotel.</p>
-            </div>
-        </section>
-
-        <section class="hoteis">
-            <img id="ibis" class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
-                alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
-
-            <div class="bloco_conteudo_hotel">
-                <h2>Ibis Style São Paulo Anhembi</h2>
-                <p>Com um design criativo, baseado no tema "aviação", o ibis Styles São Paulo Anhembi une a praticidade
-                    para o trabalho com um espaço receptivo para família por uma ótima relação custo-benefício. Os
-                    quartos são super confortáveis e adaptados para pessoas com mobilidade reduzida, com wi-fi grátis e
-                    ar condicionado. O restaurante 14 bis serve café da manhã com 40 opções de refeição, e o bar está
-                    disponível por 24 horas. Deixe as crianças se divertirem no Espaço Kids. Cães também são bem vindos.
-                    <br>
-                    O ibis Styles Anhembi está ao lado da estação de metrô Portuguesa-Tietê, o que facilita a
-                    movimentação à qualquer ponto da cidade. E a Rodoviária do Tietê, principal terminal de chegada e
-                    saída da cidade, está ao seu lado, a 2 minutos de caminhada.
-                </p>
-            </div>
-        </section>
+                <div class="bloco_conteudo_hotel">
+                    <h2>Ibis Style São Paulo Anhembi</h2>
+                    <p>Com um design criativo, baseado no tema "aviação", o ibis Styles São Paulo Anhembi une a
+                        praticidade
+                        para o trabalho com um espaço receptivo para família por uma ótima relação custo-benefício. Os
+                        quartos são super confortáveis e adaptados para pessoas com mobilidade reduzida, com wi-fi
+                        grátis e
+                        ar condicionado. O restaurante 14 bis serve café da manhã com 40 opções de refeição, e o bar
+                        está
+                        disponível por 24 horas. Deixe as crianças se divertirem no Espaço Kids. Cães também são bem
+                        vindos.
+                        <br>
+                        O ibis Styles Anhembi está ao lado da estação de metrô Portuguesa-Tietê, o que facilita a
+                        movimentação à qualquer ponto da cidade. E a Rodoviária do Tietê, principal terminal de chegada
+                        e
+                        saída da cidade, está ao seu lado, a 2 minutos de caminhada.
+                    </p>
+                </div>
+            </section>
 
 
-        <section class="hoteis">
-            <img id="bluetree" class="imagem_do_hotel" src="./imagens/hotel_blue_tree.jpg"
-                alt="imagem da faxada do hotel Blue Tree Premium Morumbi">
+            <section class="hoteis">
+                <img id="bluetree" class="imagem_do_hotel" src="./imagens/hotel_blue_tree.jpg"
+                    alt="imagem da faxada do hotel Blue Tree Premium Morumbi">
 
-            <div class="bloco_conteudo_hotel">
-                <h2>Blue Tree Premium Morumbi</h2>
-                <p>Com Wi-Fi gratuito e localizado em frente ao Shopping Morumbi, o Blue Tree Premium Morumbi oferece
-                    quartos com TV a cabo. O hotel possui piscina coberta com deck e piscina ao ar livre com uma área de
-                    20 metros para tomar sol.
-                    Todos os quartos do Morumbi Blue Tree Premium têm ar-condicionado, frigobar e janelas com isolamento
-                    acústico. O serviço de quarto está disponível 24 horas por dia. As suítes contam com TV LCD.
-                    O Noah Jonnie Space, restaurante do hotel, oferece diversas especialidades, incluindo refeições
-                    leves e típicas de várias regiões. O restaurante serve buffet internacional no almoço e menu à la
-                    carte no jantar.
-                    <br>
-                    O O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30 minutos
-                    de carro do São Paulo Expo (centro de convenções). O Consulado dos EUA está situado a 1,4 km do
-                    hotel.</p>
-            </div>
-        </section>
+                <div class="bloco_conteudo_hotel">
+                    <h2>Blue Tree Premium Morumbi</h2>
+                    <p>Com Wi-Fi gratuito e localizado em frente ao Shopping Morumbi, o Blue Tree Premium Morumbi
+                        oferece
+                        quartos com TV a cabo. O hotel possui piscina coberta com deck e piscina ao ar livre com uma
+                        área de
+                        20 metros para tomar sol.
+                        Todos os quartos do Morumbi Blue Tree Premium têm ar-condicionado, frigobar e janelas com
+                        isolamento
+                        acústico. O serviço de quarto está disponível 24 horas por dia. As suítes contam com TV LCD.
+                        O Noah Jonnie Space, restaurante do hotel, oferece diversas especialidades, incluindo refeições
+                        leves e típicas de várias regiões. O restaurante serve buffet internacional no almoço e menu à
+                        la
+                        carte no jantar.
+                        <br>
+                        O O Blue Tree Premium Morumbi fica a 15 minutos de carro do Transamérica Expo Center e a 30
+                        minutos
+                        de carro do São Paulo Expo (centro de convenções). O Consulado dos EUA está situado a 1,4 km do
+                        hotel.</p>
+                </div>
+            </section>
 
-        <section class="hoteis">
-            <img id="mercure" class="imagem_do_hotel" src="./imagens/hotel_mercure.jpg"
-                alt="imagem da faxada do hotel Mercure São Paulo Pamplona">
+            <section class="hoteis">
+                <img id="mercure" class="imagem_do_hotel" src="./imagens/hotel_mercure.jpg"
+                    alt="imagem da faxada do hotel Mercure São Paulo Pamplona">
 
-            <div class="bloco_conteudo_hotel">
-                <h2>Mercure São Paulo Pamplona</h2>
-                <p>Com uma localização ideal no bairro badalado de Jardins, em São Paulo, o Mercure São Paulo Pamplona
-                    fica ao lado da Avenida 9 de Julho e a 800 metros da Avenida Paulista.
-                    Este hotel 4 estrelas dispõe de acomodações espaçosas com ar-condicionado, área de estar e banheiro
-                    privativo.
-                    Um café da manhã variado é servido diariamente no restaurante, onde você também pode desfrutar de
-                    pratos internacionais.
-                    Você ainda pode mergulhar na piscina ao ar livre e relaxar na sauna. Além disso, você pode manter a
-                    forma e se exercitar na academia no local.
-                    Esta é a parte de São Paulo de que os nossos hóspedes mais gostam, de acordo com avaliações
-                    independentes.</p>
-            </div>
-        </section>
-    </article>
+                <div class="bloco_conteudo_hotel">
+                    <h2>Mercure São Paulo Pamplona</h2>
+                    <p>Com uma localização ideal no bairro badalado de Jardins, em São Paulo, o Mercure São Paulo
+                        Pamplona
+                        fica ao lado da Avenida 9 de Julho e a 800 metros da Avenida Paulista.
+                        Este hotel 4 estrelas dispõe de acomodações espaçosas com ar-condicionado, área de estar e
+                        banheiro
+                        privativo.
+                        Um café da manhã variado é servido diariamente no restaurante, onde você também pode desfrutar
+                        de
+                        pratos internacionais.
+                        Você ainda pode mergulhar na piscina ao ar livre e relaxar na sauna. Além disso, você pode
+                        manter a
+                        forma e se exercitar na academia no local.
+                        Esta é a parte de São Paulo de que os nossos hóspedes mais gostam, de acordo com avaliações
+                        independentes.</p>
+                </div>
+            </section>
+        </article>
 
-    <footer class="rodape">
+        <footer class="rodape">
 
-        <img src="./imagens/Logotipo Gulliver Traveller-01.png" alt="Logotipo do site Gulliver Traveller" width="50px">
+            <img src="./imagens/Logotipo Gulliver Traveller-01.png" alt="Logotipo do site Gulliver Traveller"
+                width="50px">
 
-        <h3>Projeto Gulliver Traveller - Todos os direitos reservados </h3>
+            <h3>Projeto Gulliver Traveller - Todos os direitos reservados </h3>
 
-    </footer>
-    <script src="./js/carrossel.js"></script>
+        </footer>
+        <script src="./js/carrossel.js"></script>
 </body>
 
 </html>
