@@ -35,7 +35,7 @@ body {
     color: #00361B;
     transition: background-color 1s ease, color 0.9s ease;
 }
- 
+
 .right-floating {
     justify-content: flex-end;
 }
@@ -92,11 +92,11 @@ body {
     visibility: visible;
 }
 
-.menu li:hover > a {
+.menu li:hover>a {
     background-color: #1C6FCF;
     color: #f4f4f4;
     transition: background-color 1s ease, color 0.9s ease;
-    
+
 }
 
 .menuleft ul ul li {
@@ -492,7 +492,7 @@ label {
     }
 
     .home {
-        padding-left: 9px;      
+        padding-left: 9px;
     }
 
     .logogulliver {
