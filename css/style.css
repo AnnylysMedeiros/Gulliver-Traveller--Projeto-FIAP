@@ -408,7 +408,11 @@ label {
     margin: 10px;
 }
 
-.bloco_conteudo_hotel a {
+.classificao_hotel {
+/* display: block; */
+}
+
+.classificao_hotel a {
     font-size: 1.5rem;
     text-decoration: none;
     background-color: #1C6FCF;
@@ -417,7 +421,7 @@ label {
     border-radius: 5px;
 }
 
-.bloco_conteudo_hotel a:hover {
+.classificacao_hotel a:hover {
     background-color: #71a3dd;
     color: #00361B;
 }
