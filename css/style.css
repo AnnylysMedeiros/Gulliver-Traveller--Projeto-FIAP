@@ -17,6 +17,64 @@ body {
     background-color: #D9D9D9;
 }
 
+<<<<<<< HEAD
+.zoomais{
+    color: #D9D9D9;
+    background-color: #00361b ;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    top: 410px;
+    left: 65px;
+}
+
+.zoomais p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+.zoomenos{
+    color: #D9D9D9;
+    background-color: #00361b ;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 50px;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    top: 410px;
+    left: 65px;
+}
+
+.zoomenos p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+h1 {
+    color: #00361B;
+}
+
+h2 {
+    color: #508355;
+}
+
+
+=======
+>>>>>>> b9c319d3c34c93bfaddac9d15ac8d4fb31b051bd
 /*Inicio da estilização do menu */
 .menu_cabecalho {
     height: 59px;
