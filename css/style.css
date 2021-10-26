@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -32,7 +32,8 @@ body {
     text-decoration: none;
     text-align: center;
     background-color: #5297E8;
-    color: #00361B;
+    color: #fff;
+    /* #00361B; */
     transition: background-color 1s ease, color 0.9s ease;
 }
 
@@ -49,8 +50,9 @@ body {
 .rodape {
     display: flex;
     height: 100%;
-    font-family: 'rancho';
-    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
     z-index: 10;
 }
 
@@ -64,16 +66,6 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
-}
-
-.menuright {
-    overflow-x: clip;
-    position: relative;
-}
-
-.menuright ul {
-    transition: all .5s;
-    position: absolute;
 }
 
 .menu ul li {
@@ -94,13 +86,28 @@ body {
 
 .menu li:hover>a {
     background-color: #1C6FCF;
-    color: #f4f4f4;
+    color: #ebebeb;
     transition: background-color 1s ease, color 0.9s ease;
 
 }
 
 .menuleft ul ul li {
     float: none;
+}
+
+.menuright {
+    overflow-x: clip;
+    position: relative;
+}
+
+.menuright ul {
+    transition: all .5s;
+    position: absolute;
+}
+
+.menuright ul li {
+    width: 200px;
+    height: auto;
 }
 
 /* .menuleft ul ul li a {
@@ -114,7 +121,7 @@ body {
     color: #d3d1d1;
 } */
 
-/* Label */
+/* Label no canto esquerdo (aparece apenas para telas menores)*/
 label {
     padding: 5px;
     background-color: #222;
@@ -135,9 +142,9 @@ label {
     display: none;
 }
 
-/* fim do cabeçalho */
+/* Fim da estilização do menu */
 
-
+/* função disponivel para leitores de tela */
 .pular_conteudo {
     position: absolute;
     left: -999em;
@@ -320,13 +327,13 @@ label {
 .titulo_principal {
     font-family: 'Roboto', sans-serif;
     font-size: 3.3rem;
-    text-shadow: 0.03em 0.03em 0.03em #333;
     color: #1C6FCF;
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
+/* incio da estilização do caminho de navegação */
 .breadcrumb {
     font-size: 1rem;
     font-weight: 600;
@@ -364,17 +371,17 @@ label {
     text-shadow: 0.03em 0.03em 0.03em #333;
 }
 
+/* Fim da estilização do caminho de navegação */
 
-/* section com informações dos hoteis */
+
+/* Inicio do bloco com informações dos hoteis */
+
 .hoteis {
     display: flex;
     margin: 5px 15px 50px 15px;
     background-color: #f7f2f2;
 }
 
-.hoteis:hover {
-    box-shadow: 0 0 1em #666;
-}
 
 .hoteis img {
     width: 40%;
@@ -384,35 +391,47 @@ label {
     position: relative;
 }
 
-.bloco_conteudo_hotel {
+.bloco_beneficios_hotel {
     display: block;
     max-width: 700px;
 }
 
-.bloco_conteudo_hotel h2 {
-    font-family: 'rancho';
-    font-size: 2.5rem;
+.bloco_beneficios_hotel h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #00361B;
     margin-top: 10px;
-    text-align: center;
 }
 
-.bloco_conteudo_hotel ul {
-    margin-top: 30px;
+.bloco_beneficios_hotel li {
+    margin-top: 10px;
     font-size: 1.2rem;
-    font-weight: 900;
+    /* font-weight: 900; */
     list-style: none;
 }
 
 .icon_beneficios {
-    margin: 10px;
+    margin: 5px;
+}
+
+.titulo_avaliacao {
+    display: flex;
+    height: 30%;
+    margin-top: 50px;
+}
+
+.nota {
+    display: flex;
 }
 
 .classificao_hotel {
-/* display: block; */
+    margin-left: 25px;
 }
 
 .classificao_hotel a {
+    display: flex;
+    margin-top: 20px;
     font-size: 1.5rem;
     text-decoration: none;
     background-color: #1C6FCF;
@@ -425,6 +444,9 @@ label {
     background-color: #71a3dd;
     color: #00361B;
 }
+
+/* Fim do bloco com informações dos hoteis */
+
 
 .rodape {
     background-color: #5297E8;
@@ -448,7 +470,7 @@ label {
     }
 
     .menu {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .menu a {
@@ -484,6 +506,10 @@ label {
 }
 
 @media(max-width: 650px) {
+    .menu_cabecalho {
+        height: 52px;
+    }
+
     .menu ul li {
         width: 95px;
     }
@@ -496,10 +522,11 @@ label {
     .menu a {
         padding-left: 0;
         padding-right: 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .home {
+
         padding-left: 9px;
     }
 
@@ -532,14 +559,15 @@ label {
         margin: 0;
     }
 
-    .bloco_conteudo_hotel h2 {
+    .bloco_beneficios_hotel li {
+        margin: 2px;
+        font-size: 0.9rem;
+        text-align: start;
+    }
+
+    .bloco_beneficios_hotel h2 {
         font-size: 2rem;
     }
-
-    .bloco_conteudo_hotel p {
-        font-size: 1rem;
-    }
-
 
     .rodape {
         font-size: 0.9rem;

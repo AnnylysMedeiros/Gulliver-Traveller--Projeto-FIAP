@@ -23,7 +23,8 @@
         <div class="menu_cabecalho">
             <nav class="menu menuleft left-floating">
                 <ul>
-                    <li class="home"><a href=""><i class="fas fa-home"></i>Home</a></li>
+                    <!-- <i class="fas fa-home"></i> -->
+                    <li class="home"><a href="">Home</a></li>
                     <li><a href="">Hospedagem</a></li>
                     <li><a href="">Gastronomia</a></li>
                     <li><a href="">O que fazer</a>
@@ -56,8 +57,6 @@
                 <p>A-</p>
             </div> -->
         </div>
-
-
         <!-- fim do menu -->
 
         <img class="logogulliver" src="./imagens/Logotipo Gulliver Traveller-02.png"
@@ -91,7 +90,6 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-
         <div class="botao_alternar_foto">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -114,7 +112,7 @@
             <section class="hoteis">
                 <img class="imagem_do_hotel" src="./imagens/hotel_sheraton.jpg"
                     alt="Imagem da faxada do Sheraton São Paulo WTC Hotel">
-                <div class="bloco_conteudo_hotel">
+                <div class="bloco_beneficios_hotel">
                     <h2>Sheraton São Paulo WTC Hotel</h2>
                     <ul>
                         <li><i class="icon_beneficios fas fa-spa"></i>Serviços completos de spa</li>
@@ -124,8 +122,10 @@
                     </ul>
                 </div>
                 <div class="classificao_hotel">
-                    <h3>Avaliação dos hospedes:</h3>
-                    <div>4,4</div>
+                    <div class="titulo_avaliacao">
+                        <h3>Avaliação dos viajantes:</h3>
+                        <div class="nota">4,7</div>
+                    </div>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -138,7 +138,7 @@
             <section class="hoteis">
                 <img class="imagem_do_hotel" src="./imagens/hotel_comfort.jpg"
                     alt="Imagem da faxada do Hotel Comfort Ibirapuera">
-                <div class="bloco_conteudo_hotel">
+                <div class="bloco_beneficios_hotel">
                     <h2>Hotel Comfort Ibirapuera</h2>
                     <ul>
                         <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
@@ -148,8 +148,10 @@
                     </ul>
                 </div>
                 <div class="classificao_hotel">
-                    <h3>Avaliação dos hospedes:</h3>
-                    <div>4,4</div>
+                    <div class="titulo_avaliacao">
+                        <h3>Avaliação dos viajantes:</h3>
+                        <div class="nota">4,4</div>
+                    </div>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -160,33 +162,9 @@
             </section>
 
             <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
-                    alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
-                <div class="bloco_conteudo_hotel">
-                    <h2>Ibis Style São Paulo Anhembi</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-utensils"></i>Restaurante</li>
-                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Ar condicionado</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <h3>Avaliação dos hospedes:</h3> <div>4,4</div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#ibis" title="Informações do Hotel Ibis Style">Veja mais</a>
-                </div>
-            </section>
-
-
-            <section class="hoteis">
                 <img class="imagem_do_hotel" src="./imagens/hotel_blue_tree.jpg"
                     alt="imagem da faxada do hotel Blue Tree Premium Morumbi">
-                <div class="bloco_conteudo_hotel">
+                <div class="bloco_beneficios_hotel">
                     <h2>Blue Tree Premium Morumbi</h2>
                     <ul>
                         <li><i class="icon_beneficios fas fa-eye"></i>Vista</li>
@@ -196,7 +174,10 @@
                     </ul>
                 </div>
                 <div class="classificao_hotel">
-                    <h3>Avaliação dos hospedes:</h3> <div>4,4</div>
+                    <div class="titulo_avaliacao">
+                        <h3>Avaliação dos viajantes:</h3>
+                        <div class="nota">4,4</div>
+                    </div>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -207,9 +188,35 @@
             </section>
 
             <section class="hoteis">
+                <img class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
+                    alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
+                <div class="bloco_beneficios_hotel">
+                    <h2>Ibis Style São Paulo Anhembi</h2>
+                    <ul>
+                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
+                        <li><i class="icon_beneficios fas fa-utensils"></i>Restaurante</li>
+                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
+                        <li><i class="icon_beneficios fas fa-parking"></i>Ar condicionado</li>
+                    </ul>
+                </div>
+                <div class="classificao_hotel">
+                    <div class="titulo_avaliacao">
+                        <h3>Avaliação dos viajantes:</h3>
+                        <div class="nota">4,3</div>
+                    </div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <a href="hoteis.html#ibis" title="Informações do Hotel Ibis Style">Veja mais</a>
+                </div>
+            </section>
+
+            <section class="hoteis">
                 <img class="imagem_do_hotel" src="./imagens/hotel_mercure.jpg"
                     alt="imagem da faxada do hotel Mercure São Paulo Pamplona">
-                <div class="bloco_conteudo_hotel">
+                <div class="bloco_beneficios_hotel">
                     <h2>Mercure São Paulo Pamplona</h2>
                     <ul>
                         <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
@@ -219,7 +226,10 @@
                     </ul>
                 </div>
                 <div class="classificao_hotel">
-                    <h3>Avaliação dos hospedes:</h3> <div>4,4</div>
+                    <div class="titulo_avaliacao">
+                        <h3>Avaliação dos viajantes:</h3>
+                        <div class="nota">4,3</div>
+                    </div>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
