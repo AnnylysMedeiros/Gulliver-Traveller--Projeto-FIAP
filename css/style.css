@@ -22,7 +22,7 @@ body {
     height: 59px;
     display: block;
     position: relative;
-    background-color: #5297E8;
+    background-color: #1D75DD;
 }
 
 .menu a {
@@ -31,7 +31,7 @@ body {
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: #5297E8;
+    background-color: #1D75DD;
     color: #fff;
     /* #00361B; */
     transition: background-color 1s ease, color 0.9s ease;
@@ -85,9 +85,10 @@ body {
 }
 
 .menu li:hover>a {
-    background-color: #1C6FCF;
-    color: #ebebeb;
-    transition: background-color 1s ease, color 0.9s ease;
+    background-color: #115bb6;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 1.2s ease, color 0.9s ease;
 
 }
 
@@ -434,22 +435,27 @@ label {
     margin-top: 20px;
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: #1C6FCF;
-    border: 2px solid #1763bb;
+    background-color: #3B8AE4;
+    border: 2px solid #3079cc;
     color: #222;
     border-radius: 5px;
+    width: 135px;
+    height: 40px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .classificacao_hotel a:hover {
-    background-color: #71a3dd;
-    color: #00361B;
+    background-color: #7cafe9;
+    color: #000000;
 }
 
 /* Fim do bloco com informações dos hoteis */
 
 
 .rodape {
-    background-color: #5297E8;
+    background-color: #1D75DD;
     height: 50px;
     display: flex;
     align-items: center;
@@ -502,6 +508,12 @@ label {
     .titulo_principal {
         font-size: 2.5rem;
         text-align: center;
+    }
+
+    .classificao_hotel a {
+        font-size: 1.2rem;
+        width: 120px;
+        height: 35px;
     }
 }
 
@@ -571,6 +583,12 @@ label {
 
     .rodape {
         font-size: 0.9rem;
+    }
+
+    .classificao_hotel a {
+        font-size: 1rem;
+        width: 100px;
+        height: 30px;
     }
 
 }
