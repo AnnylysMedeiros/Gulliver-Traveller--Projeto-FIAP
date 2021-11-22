@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Gulliver Traveller - Hospedagem</title>
+    <title>Home</title>
     <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="sortcut icon" href="./imagens/Logotipo Gulliver Traveller-01.png" type="image/png" />
 
@@ -18,14 +21,16 @@
 
 <body>
     <header>
-        <a class="pular_conteudo" href="#conteudo_hospedagem" accesskey="p">Pular para o conteudo principal</a>
+        <!-- <a class="pular_conteudo" href="#conteudo_hospedagem" accesskey="p">Pular para o conteudo principal</a> -->
         <!-- Inicio do menu -->
         <div class="menu_cabecalho">
             <nav class="menu menuleft left-floating">
+                <div class="corverde">G</div>
+                <div class="corazul"> ulliver</div>
                 <ul>
                     <!-- <i class="fas fa-home"></i> -->
-                    <li class="home"><a href="">Home</a></li>
-                    <li><a href="">Hospedagem</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./hospedagem.html">Hospedagem</a></li>
                     <li><a href="">Gastronomia</a></li>
                     <li><a href="">O que fazer</a>
                         <ul>
@@ -36,31 +41,24 @@
                             <li><a href="">Entretenimento</a></li>
                         </ul>
                     </li>
+                    <li><a href="">Alugue um Carro</a></li>
+                    <li><a href="">Dicas Úteis</a></li>
+                    <li><a href="">Fale Conosco</a></li>
                 </ul>
+                <i class="fas fa-search"></i>
             </nav>
             <label for="bt_menu" aria-label="Abrir menu">&#9776;</label>
             <input type="checkbox" name="btn_menu" value="menu_checkbox" id="bt_menu">
 
-            <nav class="menu menuright right-floating">
+            <!-- <nav class="menu menuright right-floating">
                 <ul>
                     <li class="itens_da_lista"><a href="">Alugue um Carro</a></li>
                     <li class="itens_da_lista"><a href="">Dicas Úteis</a></li>
                     <li class="itens_da_lista"><a href="">Fale Conosco</a></li>
                 </ul>
-            </nav>
-
-            <!-- <div class="zoomais">
-                <p>A+</p>
-            </div>
-
-            <div class="zoomenos">
-                <p>A-</p>
-            </div> -->
+            </nav> -->
         </div>
         <!-- fim do menu -->
-
-        <img class="logogulliver" src="./imagens/Logotipo Gulliver Traveller-02.png"
-            alt="Logotipo do site Gulliver Traveller">
 
         <!--  inicio carrossel -->
         <div class="slideshow-container">
@@ -98,159 +96,9 @@
         <!-- fim carrossel -->
     </header>
 
-    <main id="conteudo_hospedagem">
-        <h1 class="titulo_principal">Hotéis em São Paulo para se hospedar</h1>
 
-        <nav aria-label="Breadcrumb" class="breadcrumb">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><span aria-current="page">Hospedagem</span></li>
-            </ul>
-        </nav>
-
-        <article>
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_sheraton.jpg"
-                    alt="Imagem da faxada do Sheraton São Paulo WTC Hotel">
-                    <div class="bloco_beneficios_hotel">
-                    <h2>Sheraton São Paulo WTC Hotel</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-spa"></i>Serviços completos de spa</li>
-                        <li><i class="icon_beneficios fas fa-dumbbell"></i>Academia de ginástica</li>
-                        <li><i class="icon_beneficios fas fa-shuttle-van"></i>Transporte de/para o aeroporto</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,7</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#sheraton" title="Informações do Hotel Sheraton">Veja mais</a>
-                </div>
-            </section>
-
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_comfort.jpg"
-                    alt="Imagem da faxada do Hotel Comfort Ibirapuera">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Hotel Comfort Ibirapuera</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
-                        <li><i class="icon_beneficios far fa-snowflake"></i>Ar-condicionado</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,4</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#confort" title="Informações do Hotel Confort Ibirapuera">Veja mais</a>
-                </div>
-            </section>
-
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_blue_tree.jpg"
-                    alt="imagem da faxada do hotel Blue Tree Premium Morumbi">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Blue Tree Premium Morumbi</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-eye"></i>Vista</li>
-                        <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Ar-condicionado</li>
-                        <li><i class="icon_beneficios far fa-clock"></i>Recepção 24 horas</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,4</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#bluetree" title="Informações do Hotel Blue Tree">Veja mais</a>
-                </div>
-            </section>
-
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
-                    alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Ibis Style São Paulo Anhembi</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-utensils"></i>Restaurante</li>
-                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Ar condicionado</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,3</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#ibis" title="Informações do Hotel Ibis Style">Veja mais</a>
-                </div>
-            </section>
-
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_mercure.jpg"
-                    alt="imagem da faxada do hotel Mercure São Paulo Pamplona">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Mercure São Paulo Pamplona</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
-                        <li><i class="icon_beneficios fas fa-spa"></i>Bem-estar</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,3</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#mercure" title="Informações do Hotel Mercure">Veja mais</a>
-                </div>
-            </section>
-        </article>
-    </main>
-
-
-    <footer class="rodape">
-        <img src="./imagens/Logotipo Gulliver Traveller-01.png" alt="Logotipo do site Gulliver Traveller" width="50px">
-        <h3>Projeto Gulliver Traveller - Todos os direitos reservados </h3>
-    </footer>
 
     <script src="./js/carrossel.js"></script>
-
 </body>
-
-
 
 </html>

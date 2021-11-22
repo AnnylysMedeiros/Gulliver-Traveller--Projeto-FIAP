@@ -18,48 +18,51 @@ body {
 }
 
 /*Inicio da estilização do menu */
-.menu_cabecalho {
-    height: 59px;
-    display: block;
-    position: relative;
+
+.corverde {
+    margin-top: -10px;
+    color: #2C4001;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.corazul {
+    color: #377ADE;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.menu,
+.rodape {
     background-color: #1D75DD;
+    display: flex;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    z-index: 10;
 }
 
 .menu a {
     padding: 15px;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
     text-decoration: none;
     text-align: center;
-    background-color: #1D75DD;
     color: #fff;
     /* #00361B; */
     transition: background-color 1s ease, color 0.9s ease;
 }
 
-.right-floating {
-    justify-content: flex-end;
-}
-
-.left-floating {
-    float: left;
-    justify-content: flex-start;
-}
-
-.menu,
-.rodape {
-    display: flex;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    z-index: 10;
-}
-
 /*Estilização das listas */
 .menu ul {
     list-style: none;
-    position: relative;
+    /* position: relative; */
+
 }
 
 .menuleft>ul>li {
@@ -77,8 +80,15 @@ body {
     position: absolute;
     margin-top: 52px;
     visibility: hidden;
+    background-color: #115bb6;
     z-index: 15;
 }
+
+.menu ul ul li {
+    background-color: #1D75DD;
+   
+}
+
 
 .menuleft ul li:hover ul {
     visibility: visible;
@@ -87,16 +97,19 @@ body {
 .menu li:hover>a {
     background-color: #115bb6;
     color: #fff;
-    font-weight: 600;
+    font-size: 1.13rem;
     transition: background-color 1.2s ease, color 0.9s ease;
+}
 
+.menu ul li:hover ul {
+    display: block;
 }
 
 .menuleft ul ul li {
     float: none;
 }
 
-.menuright {
+/* .menuright {
     overflow-x: clip;
     position: relative;
 }
@@ -109,7 +122,7 @@ body {
 .menuright ul li {
     width: 200px;
     height: auto;
-}
+} */
 
 /* .menuleft ul ul li a {
     background-color: #1C6FCF;
@@ -322,7 +335,6 @@ label {
         opacity: 1
     }
 }
-
 /* fim carrossel */
 
 .titulo_principal {
@@ -371,18 +383,15 @@ label {
     text-decoration: underline;
     text-shadow: 0.03em 0.03em 0.03em #333;
 }
-
 /* Fim da estilização do caminho de navegação */
 
 
 /* Inicio do bloco com informações dos hoteis */
-
 .hoteis {
     display: flex;
     margin: 5px 15px 50px 15px;
     background-color: #f7f2f2;
 }
-
 
 .hoteis img {
     width: 40%;
@@ -450,7 +459,6 @@ label {
     background-color: #7cafe9;
     color: #000000;
 }
-
 /* Fim do bloco com informações dos hoteis */
 
 
@@ -479,7 +487,7 @@ label {
         font-size: 1.1rem;
     }
 
-    .menu a {
+    /* .menu a {
         text-align: start;
     }
 
@@ -495,7 +503,7 @@ label {
     .menuright ul li {
         width: 100%;
         float: none;
-    }
+    } */
 
     .logogulliver {
         left: 10vw;
@@ -590,5 +598,4 @@ label {
         width: 100px;
         height: 30px;
     }
-
 }
