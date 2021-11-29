@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&family=Poppins&family=Roboto:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
@@ -13,338 +14,127 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #D9D9D9;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* background-color: #D9D9D9; */
+}
+
+.logo_teste {
+    height: 80px;
+    width: 112px;
+}
+
+/* distribuicao dos itens ocupando 80% da tela */
+.tamanho_na_tela {
+    width: 80%;
 }
 
 /*Inicio da estilização do menu */
-
-.corverde {
-    margin-top: -10px;
-    color: #2C4001;
-    font-size: 4rem;
-    font-weight: 900;
+.barramenu {
+    background-color: #3576D6;
+    font-size: 1.2rem;
 }
 
-.corazul {
-    color: #377ADE;
-    font-size: 2.5rem;
-    margin-top: 20px;
-    font-weight: 500;
+.dropdown-menu {
+    background-color: #3576D6;
 }
 
-.menu,
-.rodape {
-    background-color: #1D75DD;
-    display: flex;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    z-index: 10;
-}
-
-.menu a {
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    white-space: nowrap;
-    text-decoration: none;
-    text-align: center;
+.dropdown-item {
     color: #fff;
-    /* #00361B; */
-    transition: background-color 1s ease, color 0.9s ease;
 }
 
-/*Estilização das listas */
-.menu ul {
-    list-style: none;
-    /* position: relative; */
-
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
-.menuleft>ul>li {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.menu ul li {
-    width: 150px;
+.navbar-nav {
     float: left;
 }
 
-.menu ul ul {
-    position: absolute;
-    margin-top: 52px;
-    visibility: hidden;
-    background-color: #115bb6;
-    z-index: 15;
+.nav-item {
+    padding-right: 10px;
 }
 
-.menu ul ul li {
-    background-color: #1D75DD;
-   
+.fa-search {
+    color: #00bc03;
 }
 
-
-.menuleft ul li:hover ul {
-    visibility: visible;
+.form-control {
+    border-radius: 10px;
 }
 
-.menu li:hover>a {
-    background-color: #115bb6;
-    color: #fff;
-    font-size: 1.13rem;
-    transition: background-color 1.2s ease, color 0.9s ease;
-}
+/*Fim da estilização do menu */
 
-.menu ul li:hover ul {
-    display: block;
-}
 
-.menuleft ul ul li {
-    float: none;
-}
-
-/* .menuright {
-    overflow-x: clip;
-    position: relative;
-}
-
-.menuright ul {
-    transition: all .5s;
-    position: absolute;
-}
-
-.menuright ul li {
-    width: 200px;
-    height: auto;
-} */
-
-/* .menuleft ul ul li a {
-    background-color: #1C6FCF;
-    color: #f4f4f4;
-    transition: background-color 1s ease, color 0.9s ease;
-}
-
-.menuleft ul ul li a:hover {
-    background-color: #589dec;
-    color: #d3d1d1;
-} */
-
-/* Label no canto esquerdo (aparece apenas para telas menores)*/
-label {
-    padding: 5px;
-    background-color: #222;
-    color: #fff;
-    font-family: Arial;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-#bt_menu {
-    display: none;
-}
-
-label {
-    display: none;
-}
-
-/* Fim da estilização do menu */
-
-/* função disponivel para leitores de tela */
-.pular_conteudo {
-    position: absolute;
-    left: -999em;
-}
-
-/* .zoomais{
-    color: #D9D9D9;
-    background-color: #00361b ;
-    align-items: center;
-    vertical-align: middle;
-    border-radius: 50px;
-    width: 2.5em;
-    height: 2.5em;
-    position: relative;
-    top: 410px;
-    left: 65px;
-}
-
-.zoomais p{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-    
-}
-
-.zoomenos{
-    color: #D9D9D9;
-    background-color: #00361b ;
-    font-family: 'Source Sans Pro', sans-serif;
-    border-radius: 50px;
-    width: 2em;
-    height: 2em;
-    position: relative;
-    top: 410px;
-    left: 65px;
-}
-
-.zoomenos p{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-} */
-
-/*logotipo Gulliver */
-.logogulliver {
-    width: 150px;
-    position: absolute;
-    left: 3vw;
-    margin-top: 5px;
-    z-index: 5;
-}
-
-/* carrossel */
-.slides {
-    display: none
-}
-
-.imagem_carrossel {
-    vertical-align: middle;
-    height: 350px;
-}
-
-.slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-}
-
-/* botões Next & previous */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    background-color: rgba(0, 0, 0, 0.288);
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* posição do next button para a direita */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* nome do local na foto do carrossel */
-.text {
+/* Inicio do carrossel */
+.carousel-caption a {
+    text-decoration: none;
+    font-size: 1.8rem;
     color: #fff;
     text-shadow: 0.03em 0.09em 0.3em #333;
-    font-size: 1.8rem;
     background-color: #7171719f;
-    font-weight: 800;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    /* font-weight: 700; */
 }
 
-/* Numero de fotos no carrossel */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+#carouselExampleCaptions img {
+    height: 20em;
 }
 
-/* marcadores/indicadores */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.botao_alternar_foto {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-/* fim carrossel */
+/* fim do carrossel */
 
 .titulo_principal {
+    color: #377ADE;
+    font-size: 3rem;
+}
+
+/* cards da pagina principal */
+.titulo_cards {
+    border-bottom: 3px solid #00bc03;
+}
+
+.imagem_card {
+    height: 200px;
+    object-fit: fill;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.fa-star {
+    font-size: 0.9rem;
+}
+
+.ver_todos {
+    font-weight: 700;
+    color: #000;
+    background-color: #377ADE;
+}
+
+/* fim dos cards da pagina principal */
+
+.rodape {
+    color: #fff;
+    background-color: #3576D6;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* .titulo_principal {
     font-family: 'Roboto', sans-serif;
     font-size: 3.3rem;
     color: #1C6FCF;
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+} */
 
 /* incio da estilização do caminho de navegação */
 .breadcrumb {
@@ -383,6 +173,7 @@ label {
     text-decoration: underline;
     text-shadow: 0.03em 0.03em 0.03em #333;
 }
+
 /* Fim da estilização do caminho de navegação */
 
 
@@ -459,66 +250,22 @@ label {
     background-color: #7cafe9;
     color: #000000;
 }
+
 /* Fim do bloco com informações dos hoteis */
 
-
-.rodape {
-    background-color: #1D75DD;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media(max-width: 1100px) {
+    .nav-item {
+        font-size: 1rem;
+    }
 }
 
 /* Responsividade do site */
 @media(max-width: 1050px) {
-    label {
-        display: inline-block;
-        position: relative;
-        float: right;
-        z-index: 1;
-    }
-
-    #bt_menu:checked+.menuright ul {
-        margin-right: 0px;
-    }
-
-    .menu {
-        font-size: 1.1rem;
-    }
-
-    /* .menu a {
-        text-align: start;
-    }
-
-    .menuright {
-        margin-left: -100%;
-    }
-
-    .menuright ul {
-        z-index: 0;
-        margin-right: -50%;
-    }
-
-    .menuright ul li {
-        width: 100%;
-        float: none;
-    } */
-
-    .logogulliver {
-        left: 10vw;
-    }
-
     .breadcrumb {
         font-size: 0.8rem;
     }
 
-    .titulo_principal {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .classificao_hotel a {
+      .classificao_hotel a {
         font-size: 1.2rem;
         width: 120px;
         height: 35px;
@@ -526,39 +273,18 @@ label {
 }
 
 @media(max-width: 650px) {
-    .menu_cabecalho {
-        height: 52px;
+    .distribuicao_itens {
+        width: 100%;
     }
 
-    .menu ul li {
-        width: 95px;
+    #carouselExampleCaptions img {
+        height: 15em;
     }
 
-    .menuleft ul li {
-        width: 80px;
-        z-index: 25;
+    .imagem_card {
+        height: 250px;
     }
 
-    .menu a {
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 0.8rem;
-    }
-
-    .home {
-
-        padding-left: 9px;
-    }
-
-    .logogulliver {
-        width: 25vw;
-        margin-top: 5px;
-        left: 2vw;
-    }
-
-    .imagem_carrossel {
-        height: 200px;
-    }
 
     .titulo_principal {
         font-size: 1.8rem;

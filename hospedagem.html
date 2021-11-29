@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Gulliver - Hospedagem</title>
+    <title>Guvia - Hospedagem</title>
     <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="sortcut icon" href="./imagens/Logotipo Gulliver Traveller-01.png" type="image/png" />
 
@@ -22,81 +24,109 @@
 <body>
     <header>
         <!-- <a class="pular_conteudo" href="#conteudo_hospedagem" accesskey="p">Pular para o conteudo principal</a> -->
-        <!-- Inicio do menu -->
-        <div class="menu_cabecalho">
-            <nav class="menu menuleft left-floating">
-                <div class="corverde nome">G</div>
-                <div class="corazul nome"> ulliver</div>
-                <ul>
-                    <!-- <i class="fas fa-home"></i> -->
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./hospedagem.html">Hospedagem</a></li>
-                    <li><a href="">Gastronomia</a></li>
-                    <li><a href="">O que fazer</a>
-                        <ul>
-                            <li><a href="">Parques</a></li>
-                            <li><a href="">História</a></li>
-                            <li><a href="">Cultura</a></li>
-                            <li><a href="">Vida Noturna</a></li>
-                            <li><a href="">Entretenimento</a></li>
+        
+                    <!-- Inicio do menu -->
+    <nav class=" barramenu navbar navbar-expand-lg navbar-dark p-0">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+                <img src="./imagens/LoGulliver8.png" class="d-inline-block align-top logo_teste" alt="">
+            </a>
+            <!-- <img class="logo_teste" src="./imagens/LoGulliver8.png" alt=""> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- na classe active o link fica marcado no menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hospedagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gastronomia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            O que fazer
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item p-2" href="#">Parques</a></li>
+                            <li><a class="dropdown-item p-2" href="#">História</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                                aqui faz uma linha de separação nos itens do menu
+                            </li> -->
+                            <li><a class="dropdown-item p-2" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item p-2" href="#">Vida Noturna</a></li>
+                            <li><a class="dropdown-item p-2" href="#">Entretenimento</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Alugue um Carro</a></li>
-                    <li><a href="">Dicas Úteis</a></li>
-                    <li><a href="">Fale Conosco</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alugue um carro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dicas úteis</a>
+                    </li>
                 </ul>
-                <i class="fas fa-search"></i>
-            </nav>
-            <label for="bt_menu" aria-label="Abrir menu">&#9776;</label>
-            <input type="checkbox" name="btn_menu" value="menu_checkbox" id="bt_menu">
-
-            <!-- <nav class="menu menuright right-floating">
-                <ul>
-                    <li class="itens_da_lista"><a href="">Alugue um Carro</a></li>
-                    <li class="itens_da_lista"><a href="">Dicas Úteis</a></li>
-                    <li class="itens_da_lista"><a href="">Fale Conosco</a></li>
-                </ul>
-            </nav> -->
-        </div>
-        <!-- fim do menu -->
-
-        <!-- <img class="logogulliver" src="./imagens/Logotipo Gulliver Traveller-02.png"
-            alt="Logotipo do site Gulliver Traveller"> -->
-
-        <!--  inicio carrossel -->
-        <div class="slideshow-container">
-
-            <div class="slides fade">
-                <div class="numbertext">1 / 3</div>
-                <img class="imagem_carrossel" src="./imagens/MASP_museu.jpg"
-                    alt="Imagem da faxada do Museu de Arte, MASP" style="width:100%">
-                <div class="text">Museu MASP</div>
+                <form class="d-flex justify-content-end">
+                    <input class="form-control form-control-sm  w-75" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn" type="submit"> <i class="fas fa-search"></i></button>
+                </form>
             </div>
-
-            <div class="slides fade">
-                <div class="numbertext">2 / 3</div>
-                <img class="imagem_carrossel" src="./imagens/ponte_suspensa.jpg"
-                    alt="Imagem da ponte estaiada sobre o rio Tietê" style="width:100%">
-                <div class="text">Ponte Suspensa</div>
-            </div>
-
-            <div class="slides fade">
-                <div class="numbertext">3 / 3</div>
-                <img class="imagem_carrossel" src="./imagens/parque_ibirapuera_carrossel.jpg"
-                    alt="Vista do lago no parque Ibirapuera" style="width:100%">
-                <div class="text">Parque Ibirapuera</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+    </nav>
+    <!-- fim do menu -->
 
-        <div class="botao_alternar_foto">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+
+  <!-- inicio do carrossel -->
+  <div id="carouselExampleCaptions" class="carousel slide container my-3 tamanho_na_tela" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+            <img src="./imagens/hotel_sheraton.jpg" class="d-block w-100 " alt="Faxada do Hotel Sheraton">
+            <div class="carousel-caption d-none d-md-block">
+                <h5><a href="">Os melhores hotéis para se hospedar</a></h5>
+            </div>
         </div>
-        <!-- fim carrossel -->
+        <div class="carousel-item">
+            <img src="./imagens/MASP_museu.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5><a href="">Conheça o Museu de Arte de São Paulo - MASP</a></h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./imagens/restaurante_Figueira Rubayat.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5><a href="">Restaurantes para conhecer em São Paulo</a></h5>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- fim do carrossel -->
     </header>
 
     <!-- <i class="material-icons">public</i>  -->
@@ -245,11 +275,10 @@
         </article>
     </main>
 
+        <footer class="rodape">
+            <h4 class="m-0">Projeto Gulliver Traveller - Todos os direitos reservados </h4>
+        </footer>
 
-    <footer class="rodape">
-        <img src="./imagens/Logotipo Gulliver Traveller-01.png" alt="Logotipo do site Gulliver Traveller" width="50px">
-        <h3>Projeto Gulliver Traveller - Todos os direitos reservados </h3>
-    </footer>
 
     <script src="./js/carrossel.js"></script>
 
