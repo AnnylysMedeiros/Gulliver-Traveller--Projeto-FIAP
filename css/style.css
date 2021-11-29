@@ -24,6 +24,12 @@ body {
     width: 112px;
 }
 
+/* função disponivel para leitores de tela */
+.pular_conteudo {
+    position: absolute;
+    left: -999em;
+}
+
 /* distribuicao dos itens ocupando 80% da tela */
 .tamanho_na_tela {
     width: 80%;
