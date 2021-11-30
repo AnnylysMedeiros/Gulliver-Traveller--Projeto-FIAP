@@ -107,6 +107,11 @@ body {
 
 .card a {
     text-decoration: none;
+    color: #377ADE;
+}
+
+.card a:hover {
+    color: #2B5EAB;
 }
 
 .fa-star {
