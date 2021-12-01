@@ -15,271 +15,330 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Guvia - Hospedagem</title>
+    <title>Guvia - Home</title>
     <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="sortcut icon" href="./imagens/minilogo.png" type="image/png" />
-
 </head>
 
 <body>
     <header>
+        <!-- Inicio do menu -->
         <a class="pular_conteudo" href="#conteudo_hospedagem" accesskey="p">Pular para o conteudo principal</a>
-        
-                    <!-- Inicio do menu -->
-    <nav class=" barramenu navbar navbar-expand-lg navbar-dark p-0">
-        <div class="container-fluid p-0">
-            <a class="navbar-brand" href="#">
-                <img src="./imagens/LoGulliver8.png" class="d-inline-block align-top logo_teste" alt="globo terrestre e um avião representando o logo do site Guvia">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <!-- na classe active o link fica marcado no menu -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hospedagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gastronomia</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            O que fazer
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item p-2" href="#">Parques</a></li>
-                            <li><a class="dropdown-item p-2" href="#">História</a></li>
-                            <!-- <li>
+        <nav class=" barramenu navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagens/LoGuvia.png" class="d-inline-block align-top logo_teste"
+                        alt="globo terrestre e um avião representando o logo do site Guvia">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <!-- na classe active o link fica marcado no menu -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospedagem.html">Hospedagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gastronomia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                O que fazer
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item p-2" href="#">Parques</a></li>
+                                <li><a class="dropdown-item p-2" href="#">História</a></li>
+                                <!-- <li>
                                 <hr class="dropdown-divider">
                                 aqui faz uma linha de separação nos itens do menu
                             </li> -->
-                            <li><a class="dropdown-item p-2" href="#">Cultura</a></li>
-                            <li><a class="dropdown-item p-2" href="#">Vida Noturna</a></li>
-                            <li><a class="dropdown-item p-2" href="#">Entretenimento</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Alugue um carro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dicas úteis</a>
-                    </li>
-                </ul>
-                <form class="d-flex justify-content-end">
-                    <input class="form-control form-control-sm  w-75" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button class="btn" type="submit"> <i class="fas fa-search"></i></button>
-                </form>
+                                <li><a class="dropdown-item p-2" href="#">Cultura</a></li>
+                                <li><a class="dropdown-item p-2" href="#">Vida Noturna</a></li>
+                                <li><a class="dropdown-item p-2" href="#">Entretenimento</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Alugue um carro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dicas úteis</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex justify-content-end">
+                        <input class="form-control form-control-sm  w-75" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn" type="submit"> <i class="fas fa-search"></i></button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- fim do menu -->
-
-
-  <!-- inicio do carrossel -->
-  <div id="carouselExampleCaptions" class="carousel slide container my-3 tamanho_na_tela" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner rounded">
-        <div class="carousel-item active">
-            <img src="./imagens/hotel_sheraton.jpg" class="d-block w-100 " alt="Faxada do Hotel Sheraton">
-            <div class="carousel-caption d-none d-md-block">
-                <h5><a href="">Os melhores hotéis para se hospedar</a></h5>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./imagens/MASP_museu.jpg" class="d-block w-100" alt="Imagem da faxada do museu de arte de São Paulo">
-            <div class="carousel-caption d-none d-md-block">
-                <h5><a href="">Conheça o Museu de Arte de São Paulo - MASP</a></h5>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./imagens/restaurante_Figueira Rubayat.jpg" class="d-block w-100" alt="Imagem do interior do restaurante Figueira Rubayat">
-            <div class="carousel-caption d-none d-md-block">
-                <h5><a href="">Restaurantes para conhecer em São Paulo</a></h5>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<!-- fim do carrossel -->
-    </header>
-
-    <!-- <i class="material-icons">public</i>  -->
-
-
-    <main id="conteudo_hospedagem">
-        <h1 class="titulo_principal">Hotéis em São Paulo para se hospedar</h1>
-
-        <nav aria-label="Breadcrumb" class="breadcrumb">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><span aria-current="page">Hospedagem</span></li>
-            </ul>
         </nav>
+        <!-- fim do menu -->
 
-        <article>
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_sheraton.jpg"
-                    alt="Imagem da faxada do Sheraton São Paulo WTC Hotel">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Sheraton São Paulo WTC Hotel</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-spa"></i>Serviços completos de spa</li>
-                        <li><i class="icon_beneficios fas fa-dumbbell"></i>Academia de ginástica</li>
-                        <li><i class="icon_beneficios fas fa-shuttle-van"></i>Transporte de/para o aeroporto</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,7</div>
+        <!-- inicio do carrossel -->
+        <div id="carouselExampleCaptions" class="carousel slide container my-3 tamanho_na_tela" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="./imagens/hotel_sheraton.jpg" class="d-block w-100 "
+                        alt="Imagem da faxada do Hotel Sheraton">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a href="">Os melhores hotéis para se hospedar</a></h5>
                     </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#sheraton" title="Informações do Hotel Sheraton">Veja mais</a>
                 </div>
-            </section>
+                <div class="carousel-item">
+                    <img src="./imagens/MASP_museu.jpg" class="d-block w-100"
+                        alt="Imagem da faxada do museu de arte de São Paulo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a href="">Conheça o Museu de Arte de São Paulo - MASP</a></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/restaurante_Figueira Rubayat.jpg" class="d-block w-100"
+                        alt="Imagem do interior do restaurante Figueira Rubayat">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a href="">Restaurantes para conhecer em São Paulo</a></h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- fim do carrossel -->
 
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_comfort.jpg"
-                    alt="Imagem da faxada do Hotel Comfort Ibirapuera">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Hotel Comfort Ibirapuera</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
-                        <li><i class="icon_beneficios far fa-snowflake"></i>Ar-condicionado</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,4</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#confort" title="Informações do Hotel Confort Ibirapuera">Veja mais</a>
-                </div>
-            </section>
+    <main>
+        <h1 class="titulo_principal text-center">Hotéis em São Paulo para se hospedar</h1>
 
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_blue_tree.jpg"
-                    alt="imagem da faxada do hotel Blue Tree Premium Morumbi">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Blue Tree Premium Morumbi</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-eye"></i>Vista</li>
-                        <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Ar-condicionado</li>
-                        <li><i class="icon_beneficios far fa-clock"></i>Recepção 24 horas</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,4</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#bluetree" title="Informações do Hotel Blue Tree">Veja mais</a>
-                </div>
-            </section>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Hospedagem</li>
+            </ol>
+          </nav>
 
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_ibis.jpg"
-                    alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Ibis Style São Paulo Anhembi</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-utensils"></i>Restaurante</li>
-                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Ar condicionado</li>
-                    </ul>
+        <div class="card my-4 mx-auto tamanho_na_tela">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./imagens/hotel_sheraton.jpg" class="img-fluid rounded-start h-100"
+                        alt="Imagem da faxada do Hotel Sheraton">
                 </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,3</div>
-                    </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#ibis" title="Informações do Hotel Ibis Style">Veja mais</a>
-                </div>
-            </section>
+                <div class="col-md-8">
+                    <div class="card-body container">
+                        <h5 class="card-title">Sheraton São Paulo WTC Hotel</h5>
+                        <div class="row">
+                            <ul class="col-sm">
+                                <li><i class="fas fa-spa"></i>Serviços completos de spa</li>
+                                <li><i class="fas fa-dumbbell"></i>Academia de ginástica</li>
+                            </ul>
+                            <ul class="col-sm">
+                                <li><i class="fas fa-shuttle-van"></i>Transporte de/para o aeroporto
+                                </li>
+                                <li><i class="fas fa-swimmer"></i>Piscina</li>
+                            </ul>
+                        </div>
 
-            <section class="hoteis">
-                <img class="imagem_do_hotel" src="./imagens/hotel_mercure.jpg"
-                    alt="imagem da faxada do hotel Mercure São Paulo Pamplona">
-                <div class="bloco_beneficios_hotel">
-                    <h2>Mercure São Paulo Pamplona</h2>
-                    <ul>
-                        <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
-                        <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
-                        <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
-                        <li><i class="icon_beneficios fas fa-spa"></i>Bem-estar</li>
-                    </ul>
-                </div>
-                <div class="classificao_hotel">
-                    <div class="titulo_avaliacao">
-                        <h3>Avaliação dos viajantes:</h3>
-                        <div class="nota">4,3</div>
+                        <div class="row">
+                            <div class="nota col-sm">
+                                <p>4,7</p>
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <a class="col-sm" href="hoteis.html#sheraton" title="Informações do Hotel Sheraton">Veja
+                                mais</a>
+                        </div>
                     </div>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                    <a href="hoteis.html#mercure" title="Informações do Hotel Mercure">Veja mais</a>
                 </div>
-            </section>
-        </article>
+            </div>
+        </div>
+
+        <div class="card my-4 mx-auto tamanho_na_tela">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./imagens/hotel_comfort.jpg" class="img-fluid rounded-start h-100"
+                        alt="Imagem da faxada do Hotel Comfort Ibirapuera">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body container">
+                        <h5 class="card-title">Hotel Comfort Ibirapuera</h5><div class="row">
+                            <ul class="col-sm">
+                                <li><i class="fas fa-wifi"></i>Wi-Fi</li>
+                                <li><i class="far fa-snowflake"></i>Ar-condicionado</li>
+                            </ul>
+                            <ul class="col-sm">
+                                <li><i class="fas fa-parking"></i>Estacionamento</li>
+                                <li><i class="fas fa-swimmer"></i>Piscina</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="nota col-sm">
+                                <p>4,4</p>
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <a class="col-sm" href="hoteis.html#comfort" title="Informações do Hotel Confort Ibirapuera">Veja
+                                mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card my-4 mx-auto tamanho_na_tela">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./imagens/hotel_blue_tree.jpg" class="img-fluid rounded-start h-100"
+                        alt="Imagem da faxada do hotel Blue Tree Premium Morumbi">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body container">
+                        <h5 class="card-title">Blue Tree Premium Morumbi</h5>
+                        <div class="row">
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-eye"></i>Vista</li>
+                                <li><i class="icon_beneficios fas fa-wifi"></i>Wi-Fi</li>
+                            </ul>
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-parking"></i>Ar-condicionado</li>
+                                <li><i class="icon_beneficios far fa-clock"></i>Recepção 24 horas</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="nota col-sm">
+                                <p>4,4</p>
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <a class="col-sm" href="hoteis.html#blueetree" title="Informações do Hotel Blue Tree">Veja
+                                mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 mx-auto tamanho_na_tela">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./imagens/hotel_ibis.jpg" class="img-fluid rounded-start h-100"
+                        alt="Imagem da faxada do hotel Ibis Style São Paulo Anhembi">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body container">
+                        <h5 class="card-title">Ibis Style São Paulo Anhembi</h5>
+                        <div class="row">
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
+                                <li><i class="icon_beneficios fas fa-utensils"></i>Restaurante</li>
+                            </ul>
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
+                                <li><i class="icon_beneficios fas fa-parking"></i>Ar condicionado</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="nota col-sm">
+                                <p>4,3</p>
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <a class="col-sm" href="hoteis.html#ibis" title="Informações do Hotel Ibis Style">Veja
+                                mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 mx-auto tamanho_na_tela">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./imagens/hotel_mercure.jpg" class="img-fluid rounded-start h-100"
+                        alt="Imagem da faxada do hotel Mercure São Paulo Pamplona">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body container">
+                        <h5 class="card-title">Mercure São Paulo Pamplona</h5>
+                        <div class="row">
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-parking"></i>Estacionamento</li>
+                                <li><i class="icon_beneficios fas fa-swimmer"></i>Piscina</li>
+                            </ul>
+                            <ul class="col-sm">
+                                <li><i class="icon_beneficios fas fa-wheelchair"></i>Hotel com acesso para cadeira de rodas</li>
+                                <li><i class="icon_beneficios fas fa-spa"></i>Bem-estar</li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="nota col-sm">
+                                <p>4,3</p>
+
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <a class="col-sm" href="hoteis.html#mercure" title="Informações do Hotel Mercure">Veja
+                                mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-        <footer class="rodape">
-            <h4 class="m-0">Projeto Gulliver Traveller - Todos os direitos reservados </h4>
-        </footer>
+    <footer class="rodape">
+        <h4 class="m-0">Projeto Gulliver Traveller - Todos os direitos reservados </h4>
+    </footer>
 
-
-    <script src="./js/carrossel.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 
