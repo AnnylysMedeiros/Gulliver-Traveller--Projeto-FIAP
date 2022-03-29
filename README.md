@@ -26,7 +26,7 @@ O projeto Traveller será um portal que irá contemplar informações sobre viag
 4. Faça o push do branch
 5. Crie o seu Pull Request
 
-[html-image]:
+[html-image]: https://img.shields.io/badge/-html-orange?style=flat
 [css-image]: https://img.shields.io/badge/-css-blue?style=flat
 [js-image]: https://img.shields.io/badge/-JS-yellow?style=flat
 [b-image]: https://img.shields.io/badge/-bootstrap-purple?style=flat
