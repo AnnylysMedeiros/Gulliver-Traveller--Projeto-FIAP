@@ -34,7 +34,7 @@ O projeto Traveller será um portal que irá contemplar informações sobre viag
 
 <!--- Guvia menu--->
 [guvia-home]: https://img.shields.io/badge/-home-blue?style=for-the-badge
-[home-url]: https://annylysmedeiros.github.io/Gulliver-Traveller-Projeto-FIAP/
+[home-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP//
 
 [guvia-hosp]: https://img.shields.io/badge/-hospedagem-blue?style=for-the-badge
-[hosp-url]: https://annylysmedeiros.github.io/Gulliver-Traveller-Projeto-FIAP/hospedagem.html
+[hosp-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP/hospedagem.html
