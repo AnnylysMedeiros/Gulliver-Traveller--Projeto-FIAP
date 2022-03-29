@@ -1,7 +1,7 @@
 # Projeto Guvia Traveller
 > Portal para disponibilizar informações sobre viagens, cultura, história e outras informações uteis aos viajantes.
 > 
-![b-image]
+![b-image][b-url]
 ![css-image] 
 ![html-image] 
 ![js-image] 
@@ -20,7 +20,7 @@ O projeto Traveller será um portal que irá contemplar informações sobre viag
 
 ## Contribuições
 
-1. Fork (<https://github.com/AnnylysMedeiros/Gulliver-Traveller-Projeto-FIAP>)
+1. Fork (<https://github.com/AnnylysMedeiros/Projeto_Guvia_FIAP>)
 2. Crie seu branch
 3. Faça o Commit de suas alterações
 4. Faça o push do branch
@@ -30,11 +30,12 @@ O projeto Traveller será um portal que irá contemplar informações sobre viag
 [css-image]: https://img.shields.io/badge/-css-blue?style=flat
 [js-image]: https://img.shields.io/badge/-JS-yellow?style=flat
 [b-image]: https://img.shields.io/badge/-bootstrap-purple?style=flat
+[b-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP/index.html 
 
 
 <!--- Guvia menu--->
 [guvia-home]: https://img.shields.io/badge/-home-blue?style=for-the-badge
-[home-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP//
+[home-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP/index.html
 
 [guvia-hosp]: https://img.shields.io/badge/-hospedagem-blue?style=for-the-badge
 [hosp-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP/hospedagem.html
