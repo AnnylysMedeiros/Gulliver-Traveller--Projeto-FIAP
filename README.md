@@ -29,8 +29,9 @@ O projeto Traveller será um portal que irá contemplar informações sobre viag
 [html-image]: https://img.shields.io/badge/-html-orange?style=flat
 [css-image]: https://img.shields.io/badge/-css-blue?style=flat
 [js-image]: https://img.shields.io/badge/-JS-yellow?style=flat
-[b-image]: https://img.shields.io/badge/-bootstrap-purple?style=flat
 [b-url]: https://annylysmedeiros.github.io/Projeto_Guvia_FIAP/index.html 
+[b-image]: https://img.shields.io/badge/-bootstrap-purple?style=flat
+
 
 
 <!--- Guvia menu--->
