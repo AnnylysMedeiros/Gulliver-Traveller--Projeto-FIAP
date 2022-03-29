@@ -1,7 +1,7 @@
 # Projeto Guvia Traveller
 > Portal para disponibilizar informações sobre viagens, cultura, história e outras informações uteis aos viajantes.
 > 
-![b-image][b-url]
+[![b-image][b-url]]
 ![css-image] 
 ![html-image] 
 ![js-image] 
