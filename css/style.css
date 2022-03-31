@@ -193,6 +193,10 @@ body {
     border-bottom: 3px solid #00bc03;
 }
 
+.hotel_resumo {
+    margin-bottom: 30px;
+}
+
 .card-body li {
     list-style: none;
 }
@@ -202,11 +206,22 @@ body {
     align-items: baseline;
 }
 .icon_beneficios {
-    margin: 5px;
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.row ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
 }
 
 .col-sm li {
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
+}
+
+.veja_informacoes {
+    font-size: 1.2rem;
 }
 
 .mapastatic {

@@ -13,7 +13,7 @@ const encuentrame = () => {
         //mapa
         // https://www.mapquestapi.com/staticmap/v5/map?key=KEY&locations=LOCATION&size=WIDTH,HEIGHT
         const mapa = new Image();
-        mapa.src = `https://www.mapquestapi.com/staticmap/v5/map?key=jT0QRLARruiIO5jNjuNQZxb4G7AAmi5b&locations=${latitude},${longitude}&size=400,300`;
+        mapa.src = `https://www.mapquestapi.com/staticmap/v5/map?key=jT0QRLARruiIO5jNjuNQZxb4G7AAmi5b&locations=${latitude},${longitude}&size=700,300`;
         divMapa.appendChild(mapa);
     };
 
