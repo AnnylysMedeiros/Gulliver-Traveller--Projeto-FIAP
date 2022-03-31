@@ -19,7 +19,7 @@ body {
     /* background-color: #D9D9D9; */
 }
 
-.logo_teste {
+.logo_menu {
     height: 80px;
     width: 112px;
 }
@@ -68,7 +68,6 @@ body {
 .form-control {
     border-radius: 10px;
 }
-
 /*Fim da estilização do menu */
 
 
@@ -87,23 +86,16 @@ body {
 #carouselExampleCaptions img {
     height: 20em;
 }
-
 /* fim do carrossel */
 
-.titulo_principal {
+
+/* index.html */
+.titulo_index {
     color: #377ADE;
     width: 80%;
     margin: auto;
 }
 
-.titulo_principal2 {
-    color: #377ADE;
-    width: 80%;
-    margin: auto;
-    border-bottom: 3px solid #00bc03;
-}
-
-/* cards da pagina principal */
 .titulo_cards {
     border-bottom: 3px solid #00bc03;
 }
@@ -112,7 +104,16 @@ body {
     height: 200px;
     object-fit: fill;
 }
+.ver_todos {
+    font-weight: 700;
+    color: #000;
+    background-color: #377ADE;
+}
+/* Fim index.html */
 
+
+
+/* Compartilhados Index e Hospedagem */
 .card a {
     text-decoration: none;
     color: #377ADE;
@@ -125,37 +126,10 @@ body {
 .fa-star {
     font-size: 0.9rem;
 }
+/* fim compartilhados Index e Hospedagem */
 
-.ver_todos {
-    font-weight: 700;
-    color: #000;
-    background-color: #377ADE;
-}
 
-/* fim dos cards da pagina principal */
-
-.rodape {
-    color: #fff;
-    background-color: #3576D6;
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    height: 4em;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* .titulo_principal {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3.3rem;
-    color: #1C6FCF;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-} */
-
-/* incio da estilização do caminho de navegação */
+/* Caminho de navegação */
 .breadcrumb {
     width: 80%;
     margin: auto;
@@ -169,14 +143,12 @@ body {
     color: #222;
 }
 
-.breadcrumb ul {
+.breadcrumb ol {
     display: flex;
-
 }
 
 .breadcrumb li {
     list-style: none;
-
 }
 
 .breadcrumb li::before {
@@ -193,15 +165,10 @@ body {
     text-decoration: underline;
     text-shadow: 0.03em 0.03em 0.03em #333;
 }
+/* Fim caminho de navegação */
 
-/* Fim da estilização do caminho de navegação */
 
-/* novo bloco de informações dos hoteis */
-.card-body li {
-    list-style: none;
-}
-
-/* Inicio do bloco com informações dos hoteis */
+/* hoteis.html */
 .hoteis {
     display: flex;
     margin: 5px 15px 50px 15px;
@@ -215,8 +182,63 @@ body {
     margin: 10px;
     position: relative;
 }
+/* Fim hoteis.html */
 
-.bloco_beneficios_hotel {
+
+/* hospedagem.html */
+.titulo_hospedagem {
+    color: #377ADE;
+    width: 80%;
+    margin: auto;
+    border-bottom: 3px solid #00bc03;
+}
+
+.card-body li {
+    list-style: none;
+}
+
+.nota {
+    display: flex;
+    align-items: baseline;
+}
+.icon_beneficios {
+    margin: 5px;
+}
+
+.col-sm li {
+    margin: 10px 0 20px 0;
+}
+
+.mapastatic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+/* Fim hospedagem.html */
+
+.rodape {
+    color: #fff;
+    background-color: #3576D6;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .titulo_principal {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.3rem;
+    color: #1C6FCF;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+} */
+
+/* .bloco_beneficios_hotel {
     display: block;
     max-width: 700px;
 }
@@ -232,25 +254,17 @@ body {
 .bloco_beneficios_hotel li {
     margin-top: 10px;
     font-size: 1.2rem;
-    /* font-weight: 900; */
+  font-weight: 900;
     list-style: none;
-}
+} */
 
-.icon_beneficios {
-    margin: 5px;
-}
-
-.titulo_avaliacao {
+/* .titulo_avaliacao {
     display: flex;
     height: 30%;
     margin-top: 50px;
-}
+} */
 
-.nota {
-    display: flex;
-}
-
-.classificao_hotel {
+/* .classificao_hotel {
     margin-left: 25px;
 }
 
@@ -273,9 +287,9 @@ body {
 .classificacao_hotel a:hover {
     background-color: #7cafe9;
     color: #000000;
-}
-
+} */
 /* Fim do bloco com informações dos hoteis */
+
 
 @media(max-width: 1100px) {
     .nav-item {
@@ -338,13 +352,14 @@ body {
         font-size: 2rem;
     }
 
-    .rodape {
-        font-size: 0.9rem;
-    }
-
     .classificao_hotel a {
         font-size: 1rem;
         width: 100px;
         height: 30px;
     }
+
+    .rodape {
+        font-size: 0.9rem;
+    }
+
 }
