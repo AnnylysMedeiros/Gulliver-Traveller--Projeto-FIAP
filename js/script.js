@@ -16,6 +16,7 @@ const encuentrame = () => {
         mapa.src = `https://www.mapquestapi.com/staticmap/v5/map?key=jT0QRLARruiIO5jNjuNQZxb4G7AAmi5b&locations=${latitude},${longitude}&size=700,300`;
         divMapa.appendChild(mapa);
     };
+    // AjDlDSYRo393ah_QeRYxKK7BG0dcbCkyuQJ07GIi49QEjzSaQszaqga--ysNp1df
 
     const errorPosicion = (error) => {
         const divCoordenadas = document.getElementById("coordenadas");
