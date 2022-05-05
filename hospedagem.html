@@ -140,10 +140,15 @@
             </ol>
         </nav>
 
-        <div class="mapastatic">
+        <!-- <div class="mapastatic">
             <h4> Consulte hotéis próximos a você:</h4>
             <div id="coordenadas"></div>
             <div id="mapa"></div>
+        </div> -->
+        <div class="mapa">
+            <h4> Consulte hotéis próximos a você:</h4>
+            <button onclick="getLocation()">Mapa local</button>
+            <div id="mapholder"></div>
         </div>
 
         <div class="card mx-auto tamanho_na_tela hotel_resumo">
@@ -376,8 +381,14 @@
 
 
     <!-- Script google maps -->
+    <script
+        src="http://maps.google.com/maps/api/js?key=AIzaSyCH-zgXdqy71REV-kBZAThUw9_3IdPY1ao&region=BR&callback=initMap">
+    </script>
     <!-- <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH-zgXdqy71REV-kBZAThUw9_3IdPY1ao&region=BR&callback=initMap">
+    </script> -->
+    <!-- <script async
+        src="https://maps.google.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU">
     </script> -->
 
 
