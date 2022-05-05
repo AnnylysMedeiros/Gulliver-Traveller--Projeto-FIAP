@@ -44,7 +44,7 @@
 
 
 
-// var x=document.getElementById("demo");
+var x=document.getElementById("demo");
         function getLocation()
           {
           if (navigator.geolocation)
